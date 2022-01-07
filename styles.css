@@ -51,9 +51,21 @@ header span,
   width: calc(25% - (32px / 4));
 }
 .partial {
-  background-color: red;
   clear: both;
-  transform: translateY(10px);
-  max-height: 100px;
-  transition: max-height 0.5s;
+  transition: all 0.25s;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 20px;
+  border-radius: 4px;
+  max-height: 0;
+  padding: 0 20px 0 30px;
+}
+.show-details{
+  max-height: 200px !important;
+  padding: 10px 20px 0 30px !important;
+}
+.partial p {
+  margin: 5px 0 0 0;
+  font-style: italic;
+  cursor: pointer;
 }
